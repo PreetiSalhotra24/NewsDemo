@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">NewsDemo</string>
+
+    <string name="top_headlines_of_news">Top Headlines Of News</string>
+    <string name="news_name">News Name</string>
+    <string name="title">Title</string>
+    <string name="description">Description</string>
+    <string name="author_name">Author Name</string>
+    <string name="date">01.06.2023</string>
+</resources>

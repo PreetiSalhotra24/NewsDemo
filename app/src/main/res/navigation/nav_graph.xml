@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="web.connect.newsdemo.ui.fragments.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_splashFragment_to_allNewsFragment"
+            app:destination="@id/allNewsFragment"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/allNewsFragment"
+        android:name="web.connect.newsdemo.ui.fragments.AllNewsFragment"
+        android:label="@string/top_headlines_of_news"
+        app:navGraph="@navigation/nav_graph"
+        tools:layout="@layout/fragment_all_news" />
+
+</navigation>
